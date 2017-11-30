@@ -78,7 +78,6 @@ def draw_circles1():
     window.close_on_mouse_click()
 
 
-
 def print_sequence2():
     """
     Prints:

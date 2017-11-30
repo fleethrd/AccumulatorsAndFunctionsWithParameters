@@ -5,7 +5,7 @@ in its simplest classic forms:
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
          their colleagues and Ryan Fleetham.
-"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE : 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -48,6 +48,11 @@ def sum_cosines(n):
     #   No fair running the code of  sum_cosines  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
+    total = 0
+    for k in range(n):
+        total = total + 
+
+    return n
 
 
 def run_test_sum_square_roots():

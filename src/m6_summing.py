@@ -7,6 +7,7 @@ Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
          their colleagues and Ryan Fleetham.
 """  # DONE : 1. PUT YOUR NAME IN THE ABOVE LINE.
 
+import math
 
 def main():
     """ Calls the   TEST   functions in this module. """
@@ -29,6 +30,24 @@ def run_test_sum_cosines():
     print('Testing the   sum_cosines   function:')
     print('--------------------------------------------------')
 
+    # Test 1:
+    expected = .13416
+    answer = sum_cosines(3)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 2:
+    expected = 1.5403
+    answer = sum_cosines(1)
+    print('Test 2 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 3:
+    expected = -.4174
+    answer = sum_cosines(10)
+    print('Test 3 expected:', expected)
+    print('       actual:  ', answer)
+
 
 def sum_cosines(n):
     """
@@ -48,11 +67,11 @@ def sum_cosines(n):
     #   No fair running the code of  sum_cosines  to GENERATE
     #   test cases; that would defeat the purpose of TESTING!
     # ------------------------------------------------------------------
-    total = 0
+    total = 1  # cos(0) is 1
     for k in range(n):
-        total = total + 
+        total = total + math.cos(n-k)
 
-    return n
+    return total
 
 
 def run_test_sum_square_roots():
